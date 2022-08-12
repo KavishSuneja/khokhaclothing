@@ -627,7 +627,7 @@
     width:100%;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    border: px solid red;
     margin: 0px auto;
     text-align: center;
    
@@ -815,8 +815,7 @@
   .items{
     border: px solid yellow;
     position: relative;
-    height: 22
-    0px;
+    height: 180px;
     transform-style: preserve-3d;
   }
   
@@ -857,7 +856,7 @@
   }
    
   .items .face h2{
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
    /* text-transform: uppercase; */
     transform: perspective(500px) ;
