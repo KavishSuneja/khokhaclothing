@@ -39,6 +39,7 @@
 
     font-family: 'Montserrat',sans-serif;
     color: #fff;
+    font-weight:lighter;
 }
 
 .ph-number{
@@ -46,12 +47,15 @@
     color: #fff;
     border-left: 2px solid #fff;
     padding-left: 10px;
+    font-weight:lighter;
+
     /* margin-right: 15px; */
 }
 
 .email{
     font-family: 'Montserrat' ,sans-serif;
     color: #fff;
+    font-weight:lighter;
     padding-right: 10px;
 }
 
@@ -139,10 +143,9 @@
       display: block;
       width: 70%;
   }
-
   .h-ul li{
-      display: block;
-      height: 50px;
+    display: block;
+    height: 80px;
   }
 
   .menu-logo-img{
@@ -194,7 +197,7 @@
 @media screen and (min-width:701px) and (max-width:900px) {
   
   *{
-    border: px solid black;
+    border: px solid white;
 }
 .header{
     position: fixed;
@@ -218,7 +221,7 @@
 
 .h-ul li{
     display: block;
-    height: 50px;
+    height: 80px;
 }
 
 .menu-logo-img{
@@ -997,7 +1000,7 @@
 
 /* footer */
 .footer{
-  height: 185px;
+  height: auto;
   width: 100%;
   background-color: #3391C1;
   display: grid;
@@ -1005,20 +1008,23 @@
   top: 0px;
   left: 0px;
   grid-template-columns: 100%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: auto 50px;
 }
 
 .items-footer{
   border: px solid black;
   width: 90%;
+  height: auto;
   margin: 0px auto;
+  
 }
 .topf{
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   height: 140px;
+  border: px solid burlywood;
 }
 
 .logo-footer{
@@ -1036,13 +1042,16 @@
 }
 
 .menu-footer{
-  border: px solid red;
+  border: px solid rebeccapurple;
+  margin-top: 3px;
 }
 
 .menu-footer a{
   border: px solid white;
-  padding: 14px;
+  padding: 10px;
   display: block;
+  box-sizing: border-box;
+  z-index: 1000000;
   /* FONTS */
 
   text-decoration: none;
@@ -1068,7 +1077,7 @@
 .bottom-a{
   border: px solid white;
   padding: 14px;
-  margin-top: 42px;
+
   display: block;
   /* FONTS */
 
