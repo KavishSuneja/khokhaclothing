@@ -64,7 +64,7 @@
 .header{
   border: px solid red;
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 1000;
   background-color: #fff;
 }
