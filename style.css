@@ -9,7 +9,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     box-sizing: border-box;
-    border: px solid red;
+    border: px solid blue;
 
 
 }
@@ -497,11 +497,31 @@
     text-align: center;
    border: px solid black;
 }
+
+.cardmen{
+  width: 410px;
+  height: 250px;
+  border: px solid red;
+  position: relative;
+}
+.cardwomen{
+  width: 410px;
+  height: 250px;
+  border: px solid red;
+  position: relative;
+}
 #mandwomen #men img{
     width: 410px;
     height: 250px;
 
     filter: brightness(60%);
+}  
+
+#mandwomen #men2 img{
+  width: 410px;
+  height: 250px;
+
+  filter: brightness(60%);
 }  
 #men{
   display: flex;
@@ -509,6 +529,37 @@
   align-items: center;
   text-align: right;
   margin-right: 10px;
+  transform-origin:bottom ;
+  position: absolute;
+  transition: 0.5s;
+
+}
+#men2{
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  text-align: right;
+  margin-right: 10px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-origin:top ;
+  transform: translateY(100%) rotateX(90deg);
+  transition: 0.5s;
+  border: px solid green;
+
+
+}
+
+.men2-span{
+  color: #FEFEFE;
+  border: px solid white;
+  display: block;
+  text-align: left;
+  margin-top: 50px;
+  width: 98%;
+  align-self: center;
+  margin-left: 1%;
 }
 #women{
   text-align: left;
@@ -516,12 +567,49 @@
   justify-content: center;
   align-items: center;
   margin-left: 10px;
+  position: absolute;
+  transform-origin:bottom ;
+  position: absolute;
+  transition: 0.5s;
+}
+
+#women2{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-left: 10px;
+  position: absolute;
+  transform-origin:top ;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%) rotateX(90deg);
+  transition: 0.5s;
+}
+
+
+.men2-span{
+  color: #FEFEFE;
+  border: px solid white;
+  display: block;
+  text-align: left;
+  margin-top: 50px;
+  width: 98%;
+  align-self: center;
+  margin-left: 1%;
 }
 #mandwomen #women img{
     width: 410px;
     height: 250px;
   
     filter: brightness(60%);
+}  
+
+#mandwomen #women2 img{
+  width: 410px;
+  height: 250px;
+
+  filter: brightness(60%);
 }  
 #men h2{
     position: absolute;
@@ -534,7 +622,31 @@
     width: fit-content;
 
 }
+
+#men2 h2{
+  position: absolute;
+  top: 200px;
+  color: white;
+  text-align: center;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  width: fit-content;
+
+
+}
 #women h2{
+  position: absolute;
+  top: 200px;
+    /* top: -50px;
+    left: -120px; */
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    width: 200px;
+
+} 
+#women2 h2{
   position: absolute;
   top: 200px;
     /* top: -50px;
@@ -555,17 +667,64 @@
     color: white;
     
 } 
+
+
+#men2 h2 a{
+  text-decoration: none;
+  color: white;
+
+}
+#women2 h2 a{
+  text-decoration: none;
+  color: white;
+  
+} 
+.cardmen:hover #men{
+  transform: translateY(-100%) rotateX(90deg);
+}
+.cardmen:hover #men2{
+  transform: translateY(0%) rotateX(0deg);
+  background-color: #3391C1; 
+
+}
+
+.cardwomen:hover #women{
+  transform: translateY(-100%) rotateX(90deg);
+}
+.cardwomen:hover #women2{
+  transform: translateY(0%) rotateX(0deg);
+  background-color: #3391C1; 
+}
 @media(max-width:549px){
     #mandwomen{
         height: 550px;
         position: relative;
         top: 40px;
         width:100%;
-        display: block;
+        display: flex;
         margin-top: 20px;
         gap:00px;
         margin: 0px auto;
         text-align: center;
+        border: px solid brown;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .cardmen{
+      width: 98%;
+      height: 250px;
+      border: px solid green;
+      display: flex;
+      position: relative;
+    }
+    .cardwomen{
+      width: 98%;
+      height: 250px;
+      border: px solid green;
+      margin-top: 10px;
+      position: relative;
     }
 
     #mandwomen #men img{
@@ -574,25 +733,57 @@
         position: absolute;
         text-align: center;
         left: 0px;
+        top: 0px;
         filter: brightness(60%);
     }  
-    #men , #women{
-        width: 350px;
+    
+    #mandwomen #men2 img{
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      text-align: center;
+      left: 0px;
+      top: 0px;
+      filter: brightness(60%);
+      border: px solid black;
+
+  }  
+    #men , #women ,#men2 , #women2{
+        width: 100%;
         height:250px ;
         text-align: center;
+        border: px solid brown;
     }
     #mandwomen #women img{
         width: 100%;
-        margin-top: 20px;
         height: 250px;
         position: absolute;
         left: 0px;
+        top: 0px;;
         filter: brightness(60%);
     }  
+
+    #men,#women{
+      transform-origin: bottom;
+    }
+
+    #men2,#women2{
+      transform-origin: top;
+    }
+    
+    #mandwomen #women2 img{
+      width: 100%;
+      margin-top: 0px;
+      height: 250px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      filter: brightness(60%);
+  }  
     #men h2{
         position: relative;
         top: 80px;
-        left: 15px;
+        left: 0px;
         text-align: center;
         color: white;
         text-align: center;
@@ -603,7 +794,7 @@
     #women h2{
         position: relative;
         top: 80px;
-        left: 15px;
+        left: 0px;
         color: white;
         text-align: center;
         font-size: 30px;
@@ -620,6 +811,14 @@
         color: white;
 
     } 
+
+    #women{
+      left: -10px;
+    }
+
+    #women2{
+      left: -10px;
+    }
 }
 @media(min-width:549px) and (max-width:949px){
   
@@ -628,38 +827,86 @@
     top: 100px;
     text-align: center;
     width:100%;
-    display: flex;
-    justify-content: center;
     border: px solid red;
     margin: 0px auto;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
    
+}
+.cardmen{
+  width: 80%;
+  height: 250px;
+  border: px solid green;
+  display: flex;
+  position: relative;
+}
+.cardwomen{
+  width: 80%;
+  height: 250px;
+  border: px solid green;
+  margin-top: 0px;
+  position: relative;
 }
 #mandwomen #men img{
     width: 350px;
     height: 250px;
+    border: px solid red;
 
     filter: brightness(60%);
-}  
-#men{
+} 
+
+#mandwomen #men2 img{
+  width: 350px;
+  height: 250px;
+  border: px solid red;
+
+  filter: brightness(60%);
+} 
+#men,#men2{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: right;
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  width: 100%;
+  border: px solid yellow;
 }
-#women{
+
+
+#women,#women2{
   text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  border: px solid black;
+  width: 98%;
 }
+
+#men2,#women2{
+  align-items: top;
+  border: px solid black;
+}
+
+.men2-span{
+  margin-top: -30px;
+}
+
 #mandwomen #women img{
     width: 350px;
     height: 250px;
+    border: px solid red;
   
     filter: brightness(60%);
+}  
+
+
+#mandwomen #women2 img{
+  width: 350px;
+  height: 250px;
+
+  filter: brightness(60%);
 }  
 #men h2{
     position: absolute;
@@ -703,7 +950,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FFFFF0;
+  background: #f5f5dc;
+  padding: 50px 0px;
 }
 /* .item1 { grid-area: header; }
   .item2 { grid-area: menu; }
@@ -801,6 +1049,10 @@
 }
 
 @media (max-width:700px){
+
+  .grid-div{
+    margin-top: 50px;
+  }
   .grid-container{
     border: px solid brown;
     width: 90%;
