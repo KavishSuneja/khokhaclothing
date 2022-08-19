@@ -437,6 +437,9 @@
         padding-left: 0px;
         padding-top: 4px;
        }
+       .price{
+        padding-left: 5%;
+       }
 
     .category{
         border: px solid red;
