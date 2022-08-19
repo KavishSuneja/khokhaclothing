@@ -56,6 +56,7 @@
   
   .h-ul a:hover{
     color: red;
+    text-decoration: none;
     transition: 1s ease;
   }
   
@@ -264,6 +265,7 @@
     justify-content: right;
     list-style: none;
     z-index: 1000;
+    width: 96%;
     position: relative;
     top: 20px;
 }
@@ -312,13 +314,16 @@
 }
 .category li ul li a:hover{
     color: red;
+    text-decoration: none;
 }
 .category li:hover > ul{
     display: block;
+    text-decoration: none;
 }
 
 .category li:focus-within > ul{
     display: block;
+    text-decoration: none;
 }
 
 
@@ -351,6 +356,15 @@
     font-weight: 600;
     font-size: 18px;
     margin-top: -6px;
+   }
+
+   .price h5{
+    font-family: 'MontseRrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    
+    padding-left: 20px;
+    padding-top: 4px;
    }
 .grid-container2{
     border: px solid brown;
@@ -487,13 +501,21 @@
 .footer{
     height: auto;
     width: 100%;
+    border: px solid red;
     background-color: #3391C1;
     display: grid;
     position: relative;
-    top:100px;
+    top: 60px;
     left: 0px;
+    bottom: -1px;
     grid-template-columns: 100%;
     grid-template-rows: auto 50px;
+
+  }
+
+  .footer a:hover{
+     color: white;
+     text-decoration: none;
   }
   
   .items-footer{
@@ -506,7 +528,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    height: 140px;
+    height: 160px;
   }
   
   .logo-footer{
@@ -555,7 +577,7 @@
   }
   .bottom-a{
     border: px solid white;
-    padding: 14px;
+    padding: 12px;
     
     display: block;
     /* FONTS */
