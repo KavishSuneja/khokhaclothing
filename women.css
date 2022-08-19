@@ -429,6 +429,15 @@
         margin-top: 30px;          
     }
 
+    .price h5{
+        font-family: 'MontseRrat', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        
+        padding-left: 0px;
+        padding-top: 4px;
+       }
+
     .category{
         border: px solid red;
         display: flex;
