@@ -7,7 +7,7 @@
   box-sizing:border-box;
   font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    border: px solid blue;
+    /* border: 1px solid blue; */
 }
 .header{
     border: px solid red;
@@ -240,7 +240,8 @@
   font-family: 'Montserat', sans-serif;
   padding:0 3%;
   font-size:30px;
-  margin-top:2%
+  margin-top:2%;
+  color: red;
 }
 .carousel-cell {
   width:calc(20% - 2px);
@@ -267,20 +268,21 @@
 }
 .price{
  width: 100%;
- height: 60px;
+ height: 40px;
  background-color:#d7d7d7;
  color:#3391c1;
  display: flex;
- justify-content:left;
- align-items: top;
+ justify-content:right;
+ align-items: center;
  padding-left: 20px;
  font-family: 'MontseRrat', sans-serif;
  font-weight: 600;
  font-size: 18px;
- padding-top:10px ;
+ /* padding-top:10px ; */
+ /* border: 1px solid red; */
 } 
 .price h5{
-  
+  padding-right: 25px;
 }
 @media screen and (max-width:900px){
   .head{width:100%;
@@ -310,26 +312,26 @@
   }
   .carousel-cell img{
     width: 100%;
-    height: 70%;
+    height: 90%;
     float:left
   }
   .price{
     width: 100%;
-    height: 80px;
+    height: 40px;
     background-color:#d7d7d7;
     color:#3391c1;
     display: flex;
-    justify-content:left;
+    justify-content:right;
     align-items: top;
     padding-left: 20px;
     font-family: 'MontseRrat', sans-serif;
     font-weight: 600;
-    
+    padding-right: 25px;
     font-size: 18px;
         
   } 
   .price h5{
-    margin-top: 20px;
+
   }
 }
 
